@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Invitation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #ff4b5c;
+        }
+
+        button {
+            background: #ff4b5c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #e8434f;
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 15px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>🎂 You're Invited!</h1>
+        <p><b>Birthday Party</b></p>
+        <p>Date: 25 April</p>
+        <p>Time: 6:00 PM</p>
+        <p>Venue: My Home 🏠</p>
+
+        <button onclick="showMessage()">RSVP</button>
+
+        <p id="msg" class="hidden">🎉 Thanks! See you at the party!</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
